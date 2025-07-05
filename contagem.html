@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mix</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body onload="teste()">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contagem.html">Projeto Contagem</a></li>
+            <li><a href="tabuada.html">Projeto Tabuada</a></li>
+        </ul>
+    </nav>
+
+    <div id="centro">
+        <h1>Vamos contar!</h1>
+        <div>
+            <label>Início: </label><input type="number" id="ini">
+            <label>Fim: </label><input type="number" id="fim">
+            <label>Passo: </label><input type="number" id="passo">
+        </div>
+        <input type="button" value="Contar" id="botao" onclick="conte()">
+        <div id="res"></div>
+    </div>
+    <script src="js/contar.js"></script>
+</body>
+
+</html>
